@@ -1,1 +1,1 @@
-# eidiscordbot
+# Elemental Industries Discord Bot
