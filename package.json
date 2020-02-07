@@ -1,13 +1,21 @@
 {
-  "name": "discordbot",
+  "name": "eidiscordbot",
   "version": "1.0.0",
-  "description": "a bot",
+  "description": "a discord bot",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "BlueFlame Fox",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BlueFlame-Fox/eidiscordbot.git"
+  },
+  "author": "Joseph Armstrong",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BlueFlame-Fox/eidiscordbot/issues"
+  },
+  "homepage": "https://github.com/BlueFlame-Fox/eidiscordbot#readme",
   "dependencies": {
     "discord.js": "^11.5.1",
     "readline-sync": "^1.4.10"
