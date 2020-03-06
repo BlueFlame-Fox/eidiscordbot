@@ -7,9 +7,9 @@ client.once('ready', () => {
 })
 
 client.on('message', message => {
-    if (message.member.hasPermission(['KICK_MEMBERS', 'BAN_MEMBERS'])) {
-
-        console.log(message.content);
+    console.log(message.content);
+    if (message.content.startsWith(`${prefix}kick`)) {
+     if (message.member.roles.find("name", "Administrator") || ("name", "Moderators")) {
 
         if (message.content.startsWith(`${prefix}kick`)) {
             message.channel.send("BOOP")
@@ -20,6 +20,14 @@ client.on('message', message => {
             })
         }
     }
+    else {
+        message.channel.send("You cannot do that you do not have Administrator or Moderator role")
+    }
+    
+}
+if (message.content.startsWith(`${prefix}evenbetterbotfact`)) {}
 })
 
 client.login(token);
+
+//if (message.member.hasPermission(['KICK_MEMBERS', 'BAN_MEMBERS']))
